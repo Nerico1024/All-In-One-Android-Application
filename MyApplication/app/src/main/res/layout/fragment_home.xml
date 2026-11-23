@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:layout_gravity="center"
+    android:padding="0dp"
+    android:orientation="vertical"
+    android:id="@+id/HomeFragment">
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Search services..."
+       android:textSize="20sp"
+       android:paddingTop="0dp"
+       android:textStyle="bold" >
+   </EditText>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recycler_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp">
+   </androidx.recyclerview.widget.RecyclerView>
+   <TextView
+       android:id="@+id/services_label"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Services under Home Category"
+       android:textSize="15sp"
+       android:textStyle="bold" >
+   </TextView>
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recycler_view2"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="10dp">
+   </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
